@@ -1,0 +1,39 @@
+body{
+    width: 100%;
+    margin:0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: black;
+    color: white;
+}
+#page-header {
+    background-image: url('PHOTOS/dupatta.jpeg');
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    /* color: orange; */
+}
+h4{
+    font-size: 60px;
+}
+h6{
+    font-size: 30px;
+}
+
+#pagination{
+    text-align: center;
+
+}
+#pagination a {
+    text-decoration: none;
+    background-color:red ;
+    padding:15px 20px ;
+    border-radius: 4px;
+    color: aliceblue;
+    font-weight:600 ;
+    
+}

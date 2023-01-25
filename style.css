@@ -1,0 +1,614 @@
+@import url('https://fonts.googleapis.com/css?family=Tangerine');
+*{
+      margin: 0;
+    padding: 0; 
+    box-sizing: border-box; 
+     font-family: 'spartan',sans-serif;
+ } 
+
+body{
+    width: 100%;
+    margin:0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: black;
+    color: white;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: black;
+    box-shadow: 0 5px 5px black;
+   z-index: 999;
+   position: sticky;
+   top: 0;
+   left: 0;
+   /* right: 0; */
+    
+}
+.logo{
+    text-decoration: none;
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 50px;
+    font-family:'Times New Roman', Times, serif;
+    /* background-color: cadetblue; */
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+        
+}
+#header a{
+    text-decoration: none;
+
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#navbar li a{
+    font-size: 20px;
+    color: rgb(9, 134, 139);
+    font-weight: 600;
+    transition: 0.8s ease; /*transition in nav links*/
+
+}
+#navbar li a:hover{
+    color:darkgreen;
+
+}
+/* to fix color and style of current page */
+#navbar li a:hover,#navbar li a.active{
+    color: red;
+    
+}
+/* to add underline to show current page*/
+#navbar li a.active::after,
+#navbar li a:hover::after
+{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: gray;
+    bottom: -4px;
+    left: 20px;
+    position: absolute;
+
+}
+h4{
+    font-size: 35px;
+}
+h2{
+    font-size: 55px;
+}
+h6{
+    font-size: 20px;
+}
+#hero{
+    font-style:oblique;
+    background-image:url('PHOTOS/blue_1.jpeg') ;
+    background-size:cover;
+    height: 80vh;
+    width: 100%;
+    background-position: top 20% right -20%;
+    padding: 0 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    /* background-repeat: no-repeat; */
+}
+
+#hero h4{
+    color:lightseagreen;
+}
+#hero h2,h6{
+    color: black;
+}
+#hero button{
+    background-image: url('PHOTOS/button.png');
+    background-color: transparent;
+    border: 0;
+    font-style: italic;
+    font-size: 15px;
+    padding: 14px 80px 14px 65px;
+    font-weight: bold;
+    cursor: pointer;
+    font-weight: 700;
+    color:rgb(6, 137, 133);
+
+}
+#header span{
+    color: red;
+}
+.section-p1{
+    padding: 40px 40px;
+}
+#feature .fe-box1 {
+    width: 180px;
+    text-align: center;
+    padding: 20px 15px;
+    font-size: 10px;
+    box-shadow: 2px 2px 8px rgb(247, 244, 244);
+    border: 1px solid rgb(12, 12, 12);
+}
+#feature .fe-box1 img{
+    height: 120px;
+}
+#feature .fe-box1:hover{
+    box-shadow: 1px 1px 8px rgb(249, 246, 246);
+    cursor: pointer;
+}
+#feature .fe-box1 h1{
+    /* display: inline-block; */
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #088178;
+    background-color:#fddde4 ;
+}
+/* .section-p1{
+    display: flex;
+    justify-content: space-between;
+} */
+#feature .fe-box2 {
+    width: 180px;
+    text-align: center;
+    padding: 20px 15px;
+    font-size: 10px;
+    box-shadow: 2px 2px 8px rgb(248, 246, 246);
+    border: 1px solid rgb(12,12,12);
+}
+#feature .fe-box2 img{
+    height: 120px;
+    /* padding: 0 20px; */
+}
+#feature .fe-box2:hover{
+    box-shadow: 1px 1px 8px black;
+    cursor: pointer;
+}
+#feature .fe-box2 h1{
+    /* display: inline-block; */
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #fddde4;
+    background-color:darkcyan ;
+}
+#feature .fe-box3 {
+    width: 180px;
+    text-align: center;
+    padding: 20px 15px;
+    font-size: 10px;
+    box-shadow: 2px 2px 8px rgb(245, 241, 241);
+    border: 1px solid black;
+}
+#feature .fe-box3 img{
+    height: 120px;
+    width: 150px;
+}
+#feature .fe-box3:hover{
+    box-shadow: 1px 1px 8px black;
+    cursor: pointer;
+}
+#feature .fe-box3 h1{
+    /* display: inline-block; */
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #088178;
+    background-color:orange ;
+}
+#feature .fe-box4 {
+    width: 180px;
+    text-align: center;
+    padding: 20px 15px;
+    font-size: 10px;
+    box-shadow: 2px 2px 8px rgb(249, 246, 246);
+    border: 1px solid black;
+}
+#feature .fe-box4 img{
+    height: 120px;
+}
+#feature .fe-box4:hover{
+    box-shadow: 1px 1px 8px black;
+    cursor: pointer;
+}
+#feature .fe-box4 h1{
+    /* display: inline-block; */
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color:rgb(165, 116, 23) ;
+    background-color:#09dacc ;
+}
+#feature .fe-box5 {
+    width: 180px;
+    text-align: center;
+    padding: 20px 15px;
+    font-size: 10px;
+    box-shadow: 2px 2px 8px rgb(249, 246, 246);
+    border: 1px solid black;
+}
+#feature .fe-box5 img{
+    height: 120px;
+}
+#feature .fe-box5:hover{
+    box-shadow: 1px 1px 8px black;
+    cursor: pointer;
+}
+#feature .fe-box5 h1{
+    /* display: inline-block; */
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #088178;
+    background-color:#fddde4 ;
+}
+#feature .fe-box6 {
+    width: 180px;
+    text-align: center;
+    padding: 20px 15px;
+    font-size: 10px;
+    box-shadow: 2px 2px 8px rgb(251, 249, 249);
+    border: 1px solid black;
+}
+#feature .fe-box6 img{
+    height: 120px;
+}
+#feature .fe-box6:hover{
+    box-shadow: 1px 1px 8px black;
+    cursor: pointer;
+}
+/* it can also be done using nth child of fe-box1:nth-child(2) h6*/
+#feature .fe-box6 h1{
+    /* display: inline-block; */
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #072c2a;
+    background-color:#1ff3e4 ;
+}
+#feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#product1 {
+    text-align: center;
+}
+#product1 h1 {
+     color: #088178;
+     font-size: 40px;
+}
+#product1 p{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+}
+#product1 .pro button{
+    background-color: lightseagreen;
+    font-weight: bold;
+    border-radius: 5px;
+   margin-left: 50px;
+   padding: 5px ;
+}
+#product1 .pro button a {
+    text-decoration: none;
+    color:rgb(9, 89, 109);
+}
+#product1  .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 80px;
+    /* margin: 20px; */
+    flex-wrap: wrap;
+}
+#product1 .pro{
+    width: 22%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border:1px solid gray ;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 6px 6px 10px gray;
+    transition: 0.2s ease;
+    margin: 15px 0;
+    /* height: 440px; */
+}
+#product1 .pro img{
+    height: 200px;
+    width: 100%;
+    border-radius: 20px;
+}
+#product1 .pro:hover{
+    box-shadow: 4px 4px 15px gray;
+}
+#product1 .pro .des{
+    text-align: start;
+    padding:1px 0;
+}
+#product1 .pro .des h6{
+    color: #09aca1;
+}
+#product1 .pro .des a:hover{
+    color:darkred;
+    transition: .5s;
+}
+#banner {
+    background-image: url('PHOTOS/com.jpg');
+    background-size: cover;
+     /* padding: 0px;  */
+    text-align: center;
+    color: black;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#banner span{
+    color: rgb(220, 231, 10);
+}
+#banner button {
+ padding: 15px 30px;
+ border-radius: 4px;
+ cursor: pointer;
+ /* border: none; */
+ transition: 0.2s;
+ width: 150px;
+ margin-left: 600px;
+ 
+}
+#banner button a{
+    text-decoration: none;
+    color: black;
+    /* background-color: black; */
+}
+.section-m1 {
+    margin: 50px 0;
+}
+button.normal{
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #18b9ae;
+}
+#banner .normal a:hover{
+    color: palevioletred;
+    transition: .5s;
+    /* background-color: yellow; */
+    
+}
+#poster .poster-box{
+    background-image: url('PHOTOS/mens_jacketblack.webp');
+     padding: 30px; 
+    min-width:580px ;
+    color: rgb(243, 240, 240);
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    font-size: 15px;
+    margin-right: 40px;
+    margin-left: 50px;   
+
+}
+#poster{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+#poster h4{
+    color:#09aca1;  
+}
+#poster h5{
+   color:rgb(249, 251, 251);
+   font-size: 17px;
+}
+#poster h5 span{
+    color: red;
+}
+
+#poster .x{
+ font-size: 13px;
+ font-weight: 600px;
+ padding: 11px 30px;
+ background-color: white;
+ border-radius: 4px;
+ cursor: pointer;
+ border: none;
+ transition: 0.2s;
+ background-color: #088178;
+ 
+
+}
+#poster button a{
+    text-decoration: none;
+    color:black;
+    
+}
+#poster .poster-box:hover .x{
+   color: white;
+    background-color: yellow;
+}
+#poster .poster-box2 {
+    background-image: url('PHOTOS/mod6.jpeg');
+    padding: 30px; 
+    min-width:580px ;
+    color: rgb(14, 3, 3);
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    font-size: 15px;
+    margin-right: 40px;
+    margin-left: 50px; 
+}
+#poster .poster-box2:hover .x{
+    color: white;
+     background-color: rgb(0, 208, 255);
+    }
+    #poster .poster-box3 {
+        background-image: url('PHOTOS/best.webp');
+        padding: 30px; 
+        min-width:580px ;
+        color: rgb(14, 3, 3);
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:flex-start;
+        font-size: 15px;
+        margin-right: 40px;
+        margin-left: 50px; 
+        margin-top: 20px;
+        background-repeat: no-repeat;
+    }
+    #poster .poster-box3:hover .x{
+        color: white;
+         background-color:#09aca1;
+        }
+        #poster .poster-box3 h4{
+            color:rgb(21, 176, 65);  
+        }
+        #poster .poster-box4 {
+            background-image: url('PHOTOS/mod5.jpg');
+            padding: 30px; 
+            min-width:580px ;
+            color: rgb(14, 3, 3);
+            height: 40vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items:flex-start;
+            font-size: 15px;
+            margin-right: 40px;
+            margin-left: 50px; 
+            margin-top: 20px;
+        }
+        #poster .poster-box4:hover .x{
+            color: white;
+             background-color:red;
+            }
+#update {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        background-image: url('PHOTOS/back.webp');
+        background-repeat: no-repeat;
+        /* background-position: 20% 30%; */
+        background-size: 100%;
+     }
+#update h4 {
+    font-size: 22px;
+    font-weight: 700;
+    color:coral;
+}
+#update p{
+    font-size: 14px;
+    font-weight: 600;
+    color: #f7f8fb;
+}
+#update p span{
+    color: coral;
+}
+#update input {
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    outline: none;
+}
+#update button {
+    font-size: 13px;
+ font-weight: 600px;
+ padding: 11px 30px;
+ background-color:coral;
+ border-radius: 4px;
+ cursor: pointer;
+ border: none;
+ transition: 0.2s;
+ color: white;
+ margin-top: 10px;
+}
+footer .one {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+footer .install img{
+    width: 140px;
+    height: 80px;
+}
+
+footer .col h2 span{
+    color: red;
+}
+footer .col h2{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+footer h4{
+    /* font-size: 40px; */
+    padding-bottom: 10px;
+}
+footer h4{
+    font-size: 20px;
+    margin: 0 0 8px 0;
+}
+footer a{
+    text-decoration: none;
+    color:#088178;
+    margin-bottom: 10px;
+}
+.copyright{
+    text-align: center;
+}
+.copyright span{
+    color: red;
+}
+footer .follow{
+    cursor: pointer;
+}
+
+/* Media Query */
+@media(max-width:992px){
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top:0;
+        right: 0;
+        height: 100vh;
+        width:300px;
+        background-color:black ;
+
+    }
+    #poster {
+        flex-direction: column;
+    }
+
+}
